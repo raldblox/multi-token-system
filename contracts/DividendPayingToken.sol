@@ -10,7 +10,6 @@ import "./interface/DividendPayingTokenOptionalInterface.sol";
 import "./interface/IUniswapV2Router02.sol";
 import "./library/SafeMathInt.sol";
 import "./library/SafeMathUint.sol";
-import "./library/IterableMapping.sol";
 
 /// @title Dividend-Paying Token
 /// @author Roger Wu (https://github.com/roger-wu)

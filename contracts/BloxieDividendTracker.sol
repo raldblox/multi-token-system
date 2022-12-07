@@ -4,7 +4,7 @@ pragma solidity ^0.8.10;
 
 import "./DividendPayingToken.sol";
 import "./library/SafeMathInt.sol";
-import "./library/IterableMapping.sol";
+import "./IterableMapping.sol";
 
 contract BloxieDividendTracker is DividendPayingToken {
     using SafeMath for uint256;

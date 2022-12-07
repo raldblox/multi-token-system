@@ -16,7 +16,6 @@ pragma solidity ^0.8.10;
 import "@openzeppelin/contracts/token/ERC20/ERC20.sol";
 import "@openzeppelin/contracts/access/Ownable2Step.sol";
 import "@openzeppelin/contracts/utils/math/SafeMath.sol";
-import "./library/IterableMapping.sol";
 
 import "@openzeppelin/contracts/token/ERC20/ERC20.sol";
 import "@openzeppelin/contracts/utils/math/SafeMath.sol";
@@ -24,7 +23,6 @@ import "./interface/DividendPayingTokenInterface.sol";
 import "./interface/IUniswapV2Factory.sol";
 import "./interface/IUniswapV2Router02.sol";
 import "./BloxieDividendTracker.sol";
-
 
 contract Bloxie is ERC20, Ownable2Step {
     using SafeMath for uint256;
@@ -154,7 +152,7 @@ contract Bloxie is ERC20, Ownable2Step {
 
         // @note Router address for PancakeSwap v2 (LIVE) @note enabled
         IUniswapV2Router02 _uniswapV2Router = IUniswapV2Router02(
-            0x10ED43C718714eb63d5aA57B78B54704E256024E
+            0x9Ac64Cc6e4415144C455BD8E4837Fea55603e5c3
         );
 
         // Create a uniswap pair for this new token
@@ -169,7 +167,7 @@ contract Bloxie is ERC20, Ownable2Step {
         airDropLimitInEffect = false; // @note AirDrop Disabled
 
         // @note migrationSwapContract
-        address _migrationSwapContract = 0xD152f549545093347A162Dce210e7293f1452150;
+        address _migrationSwapContract = 0xa8D787106eC0b48c820372C70A591a6f4e09Fc2F;
         migrationSwapContract = _migrationSwapContract;
 
         _setAutomatedMarketMakerPair(_uniswapV2Pair, true);

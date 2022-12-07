@@ -1,5 +1,6 @@
-pragma solidity ^0.8.10;
+// SPDX-License-Identifier: MIT
 
+pragma solidity ^0.8.10;
 
 /// @title Dividend-Paying Token Optional Interface
 /// @author Roger Wu (https://github.com/roger-wu)
